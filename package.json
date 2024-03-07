@@ -1,0 +1,54 @@
+{
+    "name": "@onivoro/oso",
+    "version": "18.0.0",
+    "repository": {
+        "url": "git+https://github.com/onivoro/oso.git"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "files": [
+        "dist/*"
+    ],
+    "scripts": {
+        "onx": "onx",
+        "bind": "onx Build && echo && chmod +x dist/esm/index.js && npm link",
+        "build": "onx Build",
+        "deploy": "onx Publish",
+        "test": "onx Test",
+        "update": "onx Update"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js",
+            "default": "./dist/esm/lib.js"
+        }
+    },
+    "onx": {
+        "platform": "server",
+        "module": "commonjs"
+    },
+    "devDependencies": {
+        "@onivoro/cli": "^0.0.35",
+        "@types/jest": "*",
+        "@types/node": "18.19.1",
+        "typescript": "*"
+    },
+    "engines": {
+        "node": "18.19.1",
+        "npm": "10.2.4"
+    },
+    "dependencies": {
+        "@nestjs/common": "^10.3.3",
+        "@onivoro/server-aws-s3": "^0.0.12",
+        "@onivoro/server-common": "^0.1.0",
+        "@onivoro/server-disk": "^0.3.5",
+        "@onivoro/server-process": "^1.24.2",
+        "nest-commander": "^3.12.5"
+    },
+    "bin": {
+        "oso": "dist/esm/index.js"
+    }
+}
