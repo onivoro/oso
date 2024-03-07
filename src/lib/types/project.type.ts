@@ -3,6 +3,7 @@ export type TProject = {
     path: string,
     jestConfigTs: string,
     projectJson: {
+        prefix?: string,
         name: string,
         sourceRoot: string,
         projectType: string,
