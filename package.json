@@ -43,9 +43,11 @@
     "dependencies": {
         "@nestjs/common": "^10.3.3",
         "@onivoro/server-aws-s3": "^0.0.12",
-        "@onivoro/server-common": "^0.1.0",
+        "@onivoro/server-common": "^0.1.1",
         "@onivoro/server-disk": "^0.3.5",
         "@onivoro/server-process": "^1.24.2",
+        "amazon-cognito-identity-js": "^6.3.12",
+        "aws-sdk": "^2.1573.0",
         "nest-commander": "^3.12.5"
     },
     "bin": {
