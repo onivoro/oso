@@ -7,7 +7,7 @@ export default {
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../coverage/${path}',
   transform: {
-  '^.+\\\\.(ts|mjs|js|html)$': [
+    '^.+\\\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
       {
         tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -21,7 +21,8 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
-};`;
+};
+`;
     } else {
         return `/* eslint-disable */
 export default {
@@ -33,6 +34,7 @@ export default {
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../../../coverage/${path}',
-};`;
+};
+`;
     }
 }

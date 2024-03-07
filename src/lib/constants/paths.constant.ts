@@ -1,3 +1,3 @@
-export const projectJsonPath = 'project.json';
-export const jestConfigTsPath = 'jest.config.ts';
-export const tsconfigJsonPath = 'tsconfig.json';
+export const projectJsonName = 'project.json';
+export const jestConfigTsName = 'jest.config.ts';
+export const tsconfigJsonName = 'tsconfig.json';
