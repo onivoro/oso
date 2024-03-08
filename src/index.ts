@@ -19,7 +19,7 @@ async function bootstrap() {
 
     console.log('\n');
 
-    loadDotEnv(process.env[OSO_ENV]);
+    loadDotEnv(envFile);
 
     await CommandFactory.run(OsoModule, ['warn', 'error']);
 }
