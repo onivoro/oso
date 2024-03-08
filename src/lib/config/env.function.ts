@@ -1,7 +1,7 @@
 import { Env } from "./env.enum";
 
 export function env(): { [key in Env]: any } {
-    return Object.keys(Env).reduce((_, key) => {
+    return Object.values(Env).reduce((_, key) => {
         _[key] = process.env[key];
 
         return _;
