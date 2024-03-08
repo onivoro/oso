@@ -13,7 +13,7 @@ export default {
         tsconfig: '<rootDir>/tsconfig.spec.json',
         stringifyContentPathRegex: '\\\\.(html|svg)$',
       },
-  ],
+    ],
   },
   transformIgnorePatterns: ['node_modules/(?!.*\\\\.mjs$)'],
   snapshotSerializers: [
