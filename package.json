@@ -45,7 +45,7 @@
         "@onivoro/server-aws-s3": "^0.0.12",
         "@onivoro/server-build": "^18.0.4",
         "@onivoro/server-common": "^0.1.1",
-        "@onivoro/server-disk": "^0.3.5",
+        "@onivoro/server-disk": "^0.3.6",
         "@onivoro/server-parameterization": "^1.0.5",
         "@onivoro/server-process": "^1.24.2",
         "amazon-cognito-identity-js": "^6.3.12",

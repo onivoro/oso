@@ -1,12 +1,19 @@
 import { Module } from '@nestjs/common';
-import { MapJest } from './commands/map-jest.command';
 import { ServerBuildWithS3Module } from '@onivoro/server-build';
-import { env } from './config/env.function';
+import { moduleFactory } from '@onivoro/server-common';
 
-@Module({
-  providers: [MapJest],
-  imports: [
-    ServerBuildWithS3Module.configure(env())
-  ],
-})
-export class OsoModule { }
+import { env } from './config/env.function';
+import { GenProjectFile } from './commands/gen-project-file.command';
+
+@Module({})
+export class OsoModule {
+  static configure() {
+    return moduleFactory({
+      module: OsoModule,
+      providers: [GenProjectFile],
+      imports: [
+        ServerBuildWithS3Module.configure(env()),
+      ],
+    });
+  }
+}

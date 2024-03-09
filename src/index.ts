@@ -21,7 +21,7 @@ async function bootstrap() {
 
     loadDotEnv(envFile);
 
-    await CommandFactory.run(OsoModule, ['warn', 'error']);
+    await CommandFactory.run(OsoModule.configure(), ['warn', 'error']);
 }
 
 void bootstrap();
