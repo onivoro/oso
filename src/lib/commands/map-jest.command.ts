@@ -1,5 +1,4 @@
 import { Command, CommandRunner, Option } from 'nest-commander';
-import { getWorkspace } from '../functions/get-workspace.function';
 import { mapJest } from '../functions/map-jest.function';
 
 type IParams = any;

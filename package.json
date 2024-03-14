@@ -1,6 +1,6 @@
 {
     "name": "@onivoro/oso",
-    "version": "18.0.4",
+    "version": "18.0.5",
     "repository": {
         "url": "git+https://github.com/onivoro/oso.git"
     },
@@ -43,7 +43,7 @@
     "dependencies": {
         "@nestjs/common": "^10.3.3",
         "@onivoro/server-aws-s3": "^0.0.12",
-        "@onivoro/server-build": "^18.0.4",
+        "@onivoro/server-build": "^18.0.6",
         "@onivoro/server-common": "^0.1.1",
         "@onivoro/server-disk": "^0.3.6",
         "@onivoro/server-parameterization": "^1.0.5",
