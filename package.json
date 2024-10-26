@@ -5,7 +5,6 @@
         "url": "git+https://github.com/onivoro/oso.git"
     },
     "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
     "types": "dist/types/index.d.ts",
     "files": [
         "dist/*"
@@ -31,7 +30,7 @@
         "module": "commonjs"
     },
     "devDependencies": {
-        "@onivoro/cli": "^22.0.4",
+        "@onivoro/cli": "^22.0.8",
         "@types/jest": "*",
         "@types/node": "22.8.1",
         "typescript": "*"
@@ -42,12 +41,12 @@
     },
     "dependencies": {
         "@nestjs/common": "^10.4.6",
-        "@onivoro/server-aws-s3": "^22.0.1",
-        "@onivoro/server-build": "^22.0.1",
-        "@onivoro/server-common": "^22.0.1",
-        "@onivoro/server-disk": "^22.0.2",
+        "@onivoro/server-aws-s3": "^22.0.2",
+        "@onivoro/server-build": "^22.0.3",
+        "@onivoro/server-common": "^22.0.3",
+        "@onivoro/server-disk": "^22.0.4",
         "@onivoro/server-parameterization": "^22.0.1",
-        "@onivoro/server-process": "^22.0.1",
+        "@onivoro/server-process": "^22.0.2",
         "nest-commander": "^3.15.0"
     },
     "bin": {

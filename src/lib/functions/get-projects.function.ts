@@ -20,6 +20,6 @@ export async function getProjects() {
         return namesAndPaths.reduce((acc, { path, name }) => {
             acc[name] = path;
             return acc;
-        }, {});
+        }, {} as Record<string, string>);
     }
 }

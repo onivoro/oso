@@ -8,7 +8,7 @@ import { writeFile } from "fs/promises";
 export async function mapProjectJson(filter?: string) {
     const projects = await getProjects();
 
-    const kvps = Object.entries(projects);
+    const kvps: Array<[string, string]> = Object.entries(projects);
 
     return await Promise.all(kvps.map(async ([name, path]: [string, string]) => {
         const isAngular = path.includes('ui/');
